@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent" android:layout_width="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lists_list"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:scrollbars="vertical" android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/create_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/add"
+            android:contentDescription="Create"
+            app:rippleColor="@color/colorButtonFloatRipple" android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
+            app:backgroundTint="@color/colorButtonFloat"/>
+
+</RelativeLayout>

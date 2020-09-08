@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/song_frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/scroll_view_song"
+            tools:context=".fragments.SongFragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:id="@+id/song_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:padding="10dp">
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/change_size_layout_song" android:visibility="gone">
+
+        <SeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/seek_bar_song"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="10dp"
+                 android:max="30" android:progress="15"
+                 android:layout_marginTop="24dp"
+                 android:background="@color/seekbar_background"/>
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/close" android:layout_gravity="center"
+                   android:id="@+id/close_change_size_layout_song"
+                   android:layout_alignEnd="@id/seek_bar_song"
+                   android:background="@color/seekbar_background"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent">
+    <item
+            android:id="@+id/appSearchBar"
+            android:title="Search"
+            app:showAsAction="ifRoom|withText"
+            app:actionViewClass="androidx.appcompat.widget.SearchView" android:icon="@android:drawable/ic_menu_search"/>
+    <item android:id="@+id/flag_search_content"
+          android:title="Search Content"
+          app:showAsAction="never"
+          android:checkable="true"/>
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_local_song">
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_view_local_song"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/local_song_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:padding="10dp">
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/change_size_layout" android:visibility="gone">
+
+        <SeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/seek_bar_local_song"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="10dp"
+                 android:max="30" android:progress="15"
+                android:layout_marginTop="24dp"
+                 android:background="@color/seekbar_background"/>
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/close" android:layout_gravity="center"
+                   android:id="@+id/close_change_size_layout"
+                   android:layout_alignEnd="@id/seek_bar_local_song"
+                   android:background="@color/seekbar_background"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CazApp</string>
+    <string name="stitch_client_app_id">cazapp-klrsz</string>
+    <string name="realm_client_app_id">cazapp-klrsz</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="server_client_id">1009199789388-bu7djn9ngadsp59tg1mq1svsr7p6tcmj.apps.googleusercontent.com</string>
+    <string name="skip"><u>Skip login</u></string>
+</resources>
